@@ -5,9 +5,9 @@ $domains = getDomains();
 
 function getDomains() {
   $status = "ACTIVE";
-  $limit = '50';
+  $limit = '2000';
 
-  $url = "https://api.godaddy.com/v1/domains?statuses=$status";
+  $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit";
 
   $header = array(
       'Authorization: sso-key e4MzyMPn8fAg_FzDC2wsTtydo2FscwYDXBX:LLsJGWYhAfcVRBqMGvQPbX'
