@@ -1,6 +1,23 @@
 <?php
 
-$domains = getDomains();
+main();
+
+function main() {
+
+  $response = getDomains();
+  $domains = Array();
+  for($i = 0; $i<count($response); $i++) {
+    $currentDomain = $response[$i]["domain"];
+    $domains .= $currentDomain;
+  }
+
+  echo '<pre>';
+  print_r($domains);
+  echo '</pre>';
+
+
+
+}
 
 
 function getDomains() {
@@ -37,11 +54,11 @@ function getDomains() {
   // decode the json response
   $dn = json_decode($result, true);
 
-  echo '<pre>';
-  print_r($dn);
-  echo '</pre>';
-  echo 'APIKEY: '. $_ENV["APIKEY"];
-  echo 'SECRETKEY: '. $_ENV["SECRETKEY"];
+  // echo '<pre>';
+  // print_r($dn);
+  // echo '</pre>';
+
+  return $dn;
 
 }
 
