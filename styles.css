@@ -1,3 +1,7 @@
+body {
+  margin-top: 50px;
+}
+
 .domain-container {
   padding: 5px 10px;
 }
@@ -12,10 +16,10 @@
 .domains-container, .search-container {
   max-width: 1000px;
   margin: 0 auto;
-  text-align: center;
 }
 .search-container {
   display: flex;
+  text-align: center;
 }
 .search-bar {
   width: 100%;
