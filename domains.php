@@ -1,6 +1,5 @@
 <?php
 
-main();
 
 function main() {
 
