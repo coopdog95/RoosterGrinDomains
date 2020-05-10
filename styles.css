@@ -13,6 +13,8 @@
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+}
+.search-container {
   display: flex;
 }
 .search-bar {
