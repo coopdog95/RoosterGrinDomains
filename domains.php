@@ -5,7 +5,7 @@ $domains = getDomains();
 
 function getDomains() {
   $status = "ACTIVE";
-  $limit = '2000';
+  $limit = '1000';
 
   $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit";
 
