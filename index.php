@@ -1,6 +1,6 @@
 <?php
 
 
-include_once(get_template_directory() . '/domains.php');
+include_once('domains.php');
 
 main();
