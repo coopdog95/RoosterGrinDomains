@@ -24,9 +24,8 @@ $domains = main();
       <div class="row">
 
         <div class="col-12">
-          <?php foreach ($domain as $key => $value) { ?>
+          <?php foreach ($domains as $key => $value) { ?>
             <div class="domain-container">
-              <h3><?php echo $domain; ?></h3>
               <h4><?php echo $key; ?></h4>
               <h5><?php echo $value; ?></h5>
             </div>
