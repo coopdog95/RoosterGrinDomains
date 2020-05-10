@@ -4,6 +4,7 @@
 include_once('domains.php');
 
 $domains = main();
+$response = getDomains();
 
 ?>
 
@@ -18,24 +19,21 @@ $domains = main();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Domains</h1>
+    <pre><?php print_r($response); ?></pre>
+    <h1 class="title">Domains</h1>
     <div class="container">
-
       <div class="row">
-
         <div class="col-12">
-          <?php foreach ($domains as $key => $value) { ?>
+
+          <?php foreach ($domains as $key => $domain) { ?>
             <div class="domain-container">
-              <h4><?php echo $key; ?></h4>
-              <h5><?php echo $value; ?></h5>
+              <h3><?php echo $domain; ?></h3>
             </div>
             <hr>
           <?php } ?>
 
         </div>
-
       </div>
-
     </div>
 
 
