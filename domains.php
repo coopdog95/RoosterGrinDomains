@@ -10,7 +10,7 @@ function getDomains() {
   $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit";
 
   $header = array(
-      'Authorization: sso-key' . $_ENV["APIKEY"].':'.$_ENV["SECRETKEY"]
+      'Authorization: sso-key e4MzyMPn8fAg_FzDC2wsTtydo2FscwYDXBX:LLsJGWYhAfcVRBqMGvQPbX'
   );
 
   //open connection
