@@ -24,9 +24,17 @@ $response = getDomains();
       <h1>Domains</h1>
       <h3><?php echo count($domains); ?> domains available!</h3>
     </div>
+    <div class="search-container">
+      <!-- Search form -->
+      <form class="form-inline d-flex justify-content-center md-form form-sm active-pink darken-4 active-pink-2 darken-4 mt-2">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+          aria-label="Search">
+      </form>
 
-    <input class="search-bar" type="text" placeholder="Search..">
-    <div class="container">
+    </div>
+
+    <div class="container domains-container">
       <div class="row">
         <div class="col-12">
 

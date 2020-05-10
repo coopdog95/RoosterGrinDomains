@@ -61,7 +61,4 @@ function getDomains() {
 
 }
 
-
-
-
 ?>

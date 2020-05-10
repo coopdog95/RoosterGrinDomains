@@ -8,9 +8,8 @@
 .heading {
   text-align: center;
   margin: 0 auto;
-  display: flex;
 }
-.row {
+.domains-container, .search-container {
   max-width: 1000px;
 }
 .search-bar {
