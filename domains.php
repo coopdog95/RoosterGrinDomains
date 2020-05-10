@@ -14,7 +14,7 @@ function main() {
   print_r($domains);
   echo '</pre>';
 
-
+  return $domains;
 
 }
 
