@@ -1,6 +1,5 @@
 <?php
 
-
 include_once('domains.php');
 
 $domains = main();
@@ -21,9 +20,12 @@ $response = getDomains();
   </head>
   <body>
     <!-- <pre><?php //print_r($response); ?></pre> -->
-    <h1 class="heading">Domains</h1>
-    <h3 class="subheading"><?php echo count($domains); ?> domains available!</h3>
-    <input type="text" placeholder="Search..">
+    <div class="heading">
+      <h1>Domains</h1>
+      <h3><?php echo count($domains); ?> domains available!</h3>
+    </div>
+
+    <input class="search-bar" type="text" placeholder="Search..">
     <div class="container">
       <div class="row">
         <div class="col-12">
