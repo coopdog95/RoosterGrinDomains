@@ -19,8 +19,10 @@ $response = getDomains();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <pre><?php print_r($response); ?></pre>
-    <h1 class="title">Domains</h1>
+    <!-- <pre><?php //print_r($response); ?></pre> -->
+    <h1 class="heading">Domains</h1>
+    <h3 class="subheading"><?php echo count($domains); ?> domains available!</h3>
+    <input type="text" placeholder="Search..">
     <div class="container">
       <div class="row">
         <div class="col-12">

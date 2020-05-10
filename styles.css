@@ -1,6 +1,9 @@
 .domain-container {
-
+  padding: 5px 10px;
 }
-.title {
+.heading, .subheading {
   text-align: center;
+}
+.row {
+  max-width: 1000px;
 }
