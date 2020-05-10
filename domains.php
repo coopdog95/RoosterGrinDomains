@@ -40,6 +40,8 @@ function getDomains() {
   echo '<pre>';
   print_r($dn);
   echo '</pre>';
+  echo 'APIKEY: '. $_ENV["APIKEY"];
+  echo 'SECRETKEY: '. $_ENV["SECRETKEY"];
 
 }
 
