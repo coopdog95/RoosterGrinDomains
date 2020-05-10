@@ -7,12 +7,12 @@ function main() {
   $domains = Array();
   for($i = 0; $i<count($response); $i++) {
     $currentDomain = $response[$i]["domain"];
-    $domains .= $currentDomain;
+    $domains[] = $currentDomain;
   }
 
-  echo '<pre>';
-  print_r($domains);
-  echo '</pre>';
+  // echo '<pre>';
+  // print_r($domains);
+  // echo '</pre>';
 
   return $domains;
 
