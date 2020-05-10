@@ -11,10 +11,12 @@
 }
 .domains-container, .search-container {
   max-width: 1000px;
-}
-.search-bar {
-  width: 100%;
   margin: 0 auto;
   text-align: center;
   display: flex;
+}
+.search-bar {
+  width: 100%;
+  text-align: center;
+
 }

@@ -26,11 +26,9 @@ $response = getDomains();
     </div>
     <div class="search-container">
       <!-- Search form -->
-      <form class="form-inline d-flex justify-content-center md-form form-sm active-pink darken-4 active-pink-2 darken-4 mt-2">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-          aria-label="Search">
-      </form>
+      <div class="active-pink-4 darken-4 mb-4">
+        <input class="form-control search-bar" type="text" placeholder="Search..." aria-label="Search">
+      </div>
 
     </div>
 
