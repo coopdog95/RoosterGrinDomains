@@ -34,7 +34,7 @@ $response = getDomains();
     <pre><?php print_r($response); ?></pre>
     <div class="heading container">
       <h1>Domains</h1>
-      <h3><?php echo count($domains); ?> domains available!</h3>
+      <!-- <h3><?php //echo count($domains); ?> domains available!</h3> -->
     </div>
     <div class="search-container container">
       <!-- Search form -->
