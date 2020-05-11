@@ -42,3 +42,28 @@ body {
   background-color: #811b54;
   color: white;
 }
+.heading-logo {
+  background-image: url('logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .domain-container h3{
+    font-size: 4.75rem;
+  }
+  .heading h1 {
+    font-size: 75px;
+  }
+  .heading h3 {
+    font-size: 30px;
+  }
+  .search-bar {
+    height: 80px;
+    font-size: 45px;
+  }
+}
