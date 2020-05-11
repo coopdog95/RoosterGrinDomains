@@ -1,6 +1,9 @@
 body {
   margin-top: 50px;
 }
+.container {
+  margin-top: 40px;
+}
 
 .domain-container {
   padding: 5px 10px;

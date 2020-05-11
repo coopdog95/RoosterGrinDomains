@@ -31,15 +31,13 @@ $response = getDomains();
   </head>
   <body>
     <!-- <pre><?php //print_r($response); ?></pre> -->
-    <div class="heading">
+    <div class="heading container">
       <h1>Domains</h1>
       <h3><?php echo count($domains); ?> domains available!</h3>
     </div>
-    <div class="search-container">
+    <div class="search-container container">
       <!-- Search form -->
-      <div class="active-pink-4 darken-4 mb-4">
         <input class="form-control search-bar" type="text" placeholder="Search..." aria-label="Search">
-      </div>
 
     </div>
 
