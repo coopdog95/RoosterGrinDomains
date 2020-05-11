@@ -26,9 +26,11 @@ function displayMatches() {
   const domainsArray = findMatches(this.value, domains);
   console.log(domainsArray);
   const html = domainsArray.map(domain => {
+    const regex = new RegExp(this.value, 'gi');
+    const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
     return `
       <div class="domain-container">
-        <h3>${domain}</h3>
+        <h3>${d}</h3>
       </div>
       <hr>
     `

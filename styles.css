@@ -38,3 +38,7 @@ body {
 .hidden {
   display: none;
 }
+.foundword {
+  background-color: #811b54;
+  color: white;
+}
