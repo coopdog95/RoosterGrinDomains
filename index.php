@@ -56,6 +56,15 @@ $response = getDomains();
         </div>
       </div>
     </div>
-    <script src="searchScript.js"></script>
+    <!-- <script src="searchScript.js"></script> -->
+    <script type="text/javascript">
+
+      var response = <?php echo json_encode($response); ?>;
+      for (var i = 0; i < response.length; i++) {
+        console.log(response[i]);
+      }
+
+
+    </script>
   </body>
 </html>
