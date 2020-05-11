@@ -1,3 +1,5 @@
+
+
 var domains = [];
 for (var i = 0; i < response.length; i++) {
   let domain = response[i]["domain"]
@@ -5,9 +7,9 @@ for (var i = 0; i < response.length; i++) {
   // console.log(domain)
 }
 
-function findMatches(wordToMatch, d) {
-  return d.filter(domain => {
+function findMatches(wordToMatch, domains) {
+  return domains.filter(domain => {
     const regex = new RegExp(wordToMatch, 'gi');
-    return d.match(regex);
+    return domain.match(regex)
   });
 }
