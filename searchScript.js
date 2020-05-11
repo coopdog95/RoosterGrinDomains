@@ -13,3 +13,10 @@ function findMatches(wordToMatch, domains) {
     return domain.match(regex)
   });
 }
+function displayMatches() {
+  const domainsArray = findMatches(this.value, domains);
+  console.log(domainsArray);
+}
+
+const searchInput = document.querySelector('.search-bar');
+searchInput.addEventListener('keyup', displayMatches);
