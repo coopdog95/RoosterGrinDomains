@@ -56,11 +56,11 @@ $response = getDomains();
         </div>
       </div>
     </div>
+    <script src="searchScript.js" type="text/javascript"></script>
     <script type="text/javascript">
       const response = <?php echo json_encode($response); ?>;
       console.log('t: ', t);
     </script>
 
-    <script src="searchScript.js" type="text/javascript"></script>
   </body>
 </html>
