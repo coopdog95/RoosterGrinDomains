@@ -46,13 +46,14 @@ $response = getDomains();
       <div class="row">
         <div class="col-12">
           <div class="matchingDomains"></div>
-          <?php foreach ($domains as $key => $domain) { ?>
-            <div class="domain-container">
-              <h3><?php echo $domain; ?></h3>
-            </div>
-            <hr>
-          <?php } ?>
-
+          <div class="originalDomains">
+            <?php foreach ($domains as $key => $domain) { ?>
+              <div class="domain-container">
+                <h3><?php echo $domain; ?></h3>
+              </div>
+              <hr>
+            <?php } ?>
+          </div>
         </div>
       </div>
     </div>

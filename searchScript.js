@@ -14,6 +14,15 @@ function findMatches(wordToMatch, domains) {
   });
 }
 function displayMatches() {
+  if(this.value.length === 0) {
+    matchingDomains.classList.add("hidden");
+    originalDomains.classList.remove("hidden");
+    return
+  } else {
+    matchingDomains.classList.remove("hidden");
+    originalDomains.classList.add("hidden");
+  }
+  const wordsArray = this.value.split(" ");
   const domainsArray = findMatches(this.value, domains);
   console.log(domainsArray);
   const html = domainsArray.map(domain => {
@@ -21,6 +30,7 @@ function displayMatches() {
       <div class="domain-container">
         <h3>${domain}</h3>
       </div>
+      <hr>
     `
   }).join('');
   matchingDomains.innerHTML = html;
@@ -28,5 +38,6 @@ function displayMatches() {
 
 const searchInput = document.querySelector('.search-bar');
 const matchingDomains = document.querySelector('.matchingDomains');
+const originalDomains = document.querySelector('.originalDomains');
 
 searchInput.addEventListener('keyup', displayMatches);
