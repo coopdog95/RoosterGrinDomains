@@ -52,6 +52,12 @@ body {
   margin: 0 auto;
 }
 
+.numberOfResults {
+  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 18px;
+}
+
 @media screen and (max-width: 450px) {
   .domain-container h3{
     font-size: 4.75rem;
