@@ -16,7 +16,17 @@ function findMatches(wordToMatch, domains) {
 function displayMatches() {
   const domainsArray = findMatches(this.value, domains);
   console.log(domainsArray);
+  const html = domainsArray.map(domain => {
+    return `
+      <div class="domain-container">
+        <h3>${domain}</h3>
+      </div>
+    `
+  }).join('');
+  matchingDomains.innerHTML = html;
 }
 
 const searchInput = document.querySelector('.search-bar');
+const matchingDomains = document.querySelector('.matchingDomains');
+
 searchInput.addEventListener('keyup', displayMatches);
