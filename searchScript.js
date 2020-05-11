@@ -1,5 +1,6 @@
-// var response = <?php echo json_encode($response); ?>;
+var domains = [];
 for (var i = 0; i < response.length; i++) {
-  console.log(response[i]);
+  let domain = response[i]["domain"]
+  domains += domain
+  console.log(domain)
 }
-var t = "TESTY TEST"
