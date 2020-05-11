@@ -46,6 +46,7 @@ $response = getDomains();
     <div class="domains-container container">
       <div class="row">
         <div class="col-12">
+          <h4 class="matchingResultsNumber"></h4>
           <div class="matchingDomains"></div>
           <div class="originalDomains">
             <?php foreach ($domains as $key => $domain) { ?>
