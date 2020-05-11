@@ -1,31 +1,36 @@
 body {
   margin-top: 50px;
 }
-.container {
-  margin-top: 40px;
-}
 
 .domain-container {
   padding: 5px 10px;
 }
+
 .domain-container h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .heading {
   text-align: center;
   margin: 0 auto;
 }
+
 .domains-container, .search-container {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .search-container {
   display: flex;
   text-align: center;
 }
+
 .search-bar {
   width: 100%;
   text-align: center;
+}
 
+.container {
+  margin-top: 40px;
 }

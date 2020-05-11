@@ -41,7 +41,7 @@ $response = getDomains();
 
     </div>
 
-    <div class="container domains-container">
+    <div class="domains-container container">
       <div class="row">
         <div class="col-12">
 
