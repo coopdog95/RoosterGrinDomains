@@ -84,7 +84,7 @@ body {
 
 @media (max-width: 450px) {
   html {
-    width: 170%;
+    width: 175%;
   }
   .domains-container {
     width: 98% !important;
@@ -97,6 +97,9 @@ body {
   }
   .heading h3 {
     font-size: 30px;
+  }
+  .domain-container .contact-btn {
+    bottom: 42px;
   }
   #searchy {
     height: 100px !important;

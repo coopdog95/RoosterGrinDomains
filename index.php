@@ -36,7 +36,7 @@ $response = getDomains();
     <div class="heading container">
       <div class="heading-logo"></div>
       <h1>Rooster Grin Domains</h1>
-      <h3><?php echo count($domains); ?> domains available!</h3>
+      <!-- <h3><?php //echo count($domains); ?> domains available!</h3> -->
     </div>
     <div class="search-container container">
       <!-- Search form -->
