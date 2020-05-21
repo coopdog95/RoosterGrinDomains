@@ -8,7 +8,7 @@ for (var i = 0; i < response.length; i++) {
 }
 
 function findMatches(wordToMatch, domains) {
-  const wordsArray = wordsToMatch.split(" ");
+  const wordsArray = wordToMatch.split(" ");
   return domains.filter(domain => {
     const regex = new RegExp(wordToMatch, 'gi');
     console.log("regex: " + regex);
