@@ -16,7 +16,7 @@ function findMatches(wordToMatch, domains) {
       console.log("regex: " + regex);
       return domain.match(regex)
     })
-    retArray.push(a);
+    retArray.concat(a);
     console.log('retArray now: ' + retArray);
   });
   console.log('final array: ' + retArray);
