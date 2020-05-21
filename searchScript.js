@@ -10,6 +10,7 @@ for (var i = 0; i < response.length; i++) {
 function findMatches(wordToMatch, domains) {
   var wordsArray = wordToMatch.split(" ");
   wordsArray.filter(word => {
+    console.log('word ()'+word.length+'): ' + word);
     return word.length > 0;
   })
 
@@ -26,8 +27,8 @@ function findMatches(wordToMatch, domains) {
         retArray.push(domain);
       }
     });
-    console.log('a'+a.length+': ' + a);
-    console.log('retArray now: '+retArray.length+': ' + retArray);
+    // console.log('a'+a.length+': ' + a);
+    // console.log('retArray now: '+retArray.length+': ' + retArray);
   });
   console.log('final array'+retArray.length+': ' + retArray);
   return retArray;
