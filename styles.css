@@ -80,8 +80,11 @@ body {
 
 
 @media screen and (max-width: 450px) {
+  .domains-container {
+    width: 98% !important;
+  }
   .domain-container h3{
-    font-size: 4.75rem;
+    font-size: 40px;
   }
   .heading h1 {
     font-size: 75px;
@@ -90,7 +93,7 @@ body {
     font-size: 30px;
   }
   .search-bar {
-    height: 80px;
-    font-size: 45px;
+    height: 100px !important;
+    font-size: 40px !important;
   }
 }
