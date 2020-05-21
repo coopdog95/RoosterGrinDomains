@@ -58,6 +58,13 @@ body {
   padding-bottom: 18px;
 }
 
+.originalDomains .domain-container .contact-btn {
+  width: 100px;
+  padding: 10px;
+  right: 0;
+  position: relative;
+}
+
 @media screen and (max-width: 450px) {
   .domain-container h3{
     font-size: 4.75rem;

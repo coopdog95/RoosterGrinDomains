@@ -51,7 +51,6 @@ function displayMatches() {
 
   const wordsArray = this.value.split(" ");
   const domainsArray = findMatches(this.value, domains);
-  console.log(domainsArray);
   var dd = '';
   const html = domainsArray.map(domain => {
     // wordsArray.forEach((word, i) => {
