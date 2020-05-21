@@ -71,7 +71,8 @@ body {
   border-radius: 10px;
   text-decoration: none;
 }
-.originalDomains .domain-container .contact-btn:hover {
+
+.domain-container .contact-btn:hover {
   background-color: #811b54;
   color: white;
   text-decoration: none;
