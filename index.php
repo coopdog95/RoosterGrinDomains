@@ -40,7 +40,14 @@ $response = getDomains();
     <div class="search-container container">
       <!-- Search form -->
         <input class="search-bar" id="searchy" type="text" placeholder="Search..." aria-label="Search">
-
+        <style media="screen">
+        @media screen and (max-width:450px) {
+          #searchy {
+            height: 100px !important;
+            font-size: 40px !important;
+          }
+        }
+        </style>
     </div>
 
     <div class="domains-container container">
