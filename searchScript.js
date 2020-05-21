@@ -63,7 +63,7 @@ function displayMatches() {
     // const regex = new RegExp(this.value, 'gi');
     // const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
     return `
-      <div class="domain-contakiner">
+      <div class="domain-container">
         <h3>${domain}</h3>
         <a href="#" class="contact-btn">Contact Us!</a>
       </div>
