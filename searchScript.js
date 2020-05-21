@@ -49,18 +49,18 @@ function displayMatches() {
   console.log(domainsArray);
   var dd = '';
   const html = domainsArray.map(domain => {
-    wordsArray.forEach((word, i) => {
-      const regex = new RegExp(word, 'gi');
-      const d = domain.replace(regex, `<span class="foundword">${word}</span>`);
-      console.log('d:' + d);
-      dd += d;
-    });
-    console.log('dd: ' + dd);
+    // wordsArray.forEach((word, i) => {
+    //   const regex = new RegExp(word, 'gi');
+    //   const d = domain.replace(regex, `<span class="foundword">${word}</span>`);
+    //   console.log('d:' + d);
+    //   dd += d;
+    // });
+    // console.log('dd: ' + dd);
     // const regex = new RegExp(this.value, 'gi');
     // const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
     return `
-      <div class="domain-container">
-        <h3>${dd}</h3>
+      <div class="domain-contakiner">
+        <h3>${domain}</h3>
       </div>
       <hr>
     `
