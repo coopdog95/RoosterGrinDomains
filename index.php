@@ -39,7 +39,7 @@ $response = getDomains();
     </div>
     <div class="search-container container">
       <!-- Search form -->
-        <input class="search-bar" type="text" placeholder="Search..." aria-label="Search">
+        <input class="search-bar" id="searchy" type="text" placeholder="Search..." aria-label="Search">
 
     </div>
 

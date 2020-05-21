@@ -95,7 +95,7 @@ body {
   .heading h3 {
     font-size: 30px;
   }
-  input.search-bar {
+  .search-bar, #searchy {
     height: 100px !important;
     font-size: 40px !important;
   }
