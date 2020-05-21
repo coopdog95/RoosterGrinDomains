@@ -92,7 +92,7 @@ body {
   .heading h3 {
     font-size: 30px;
   }
-  .search-bar {
+  .search-bar, .form-control {
     height: 100px !important;
     font-size: 40px !important;
   }
