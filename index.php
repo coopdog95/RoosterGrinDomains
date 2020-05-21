@@ -51,7 +51,14 @@ $response = getDomains();
           <div class="originalDomains">
             <?php foreach ($domains as $key => $domain) { ?>
               <div class="domain-container">
-                <h3><?php (strlen($domain) >= 23 ? echo '<span class="long-url">' . $domain . '</span>' : echo $domain) ?></h3>
+                <h3><?php
+                if(strlen($domain) >= 23 ){
+                   echo '<span class="long-url">' . $domain . '</span>';
+                }
+                else{
+                  echo $domain;
+                }
+                ?></h3>
                 <a href="#" class="contact-btn">Contact Us!</a>
               </div>
               <hr>
