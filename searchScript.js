@@ -9,7 +9,7 @@ for (var i = 0; i < response.length; i++) {
 
 function findMatches(wordToMatch, domains) {
   const wordsArray = wordToMatch.split(" ");
-  console.log('wordArray('+wordArray.length+'): ' + wordsArray);
+  console.log('wordsArray('+wordsArray.length+'): ' + wordsArray);
   var retArray = [];
   wordsArray.forEach((word, i) => {
     var a = domains.filter(domain => {
