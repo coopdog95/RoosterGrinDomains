@@ -8,7 +8,11 @@ for (var i = 0; i < response.length; i++) {
 }
 
 function findMatches(wordToMatch, domains) {
-  const wordsArray = wordToMatch.split(" ");
+  var wordsArray = wordToMatch.split(" ");
+  wordsArray.filter(word => {
+    return word.length > 0;
+  })
+
   console.log('wordsArray('+wordsArray.length+'): ' + wordsArray);
   var retArray = [];
   wordsArray.forEach((word, i) => {
