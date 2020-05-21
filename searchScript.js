@@ -19,7 +19,7 @@ function findMatches(wordToMatch, domains) {
     });
     a.forEach((domain, i) => {
       if(!retArray.includes(domain)){
-        retArray.concat(domain);
+        retArray.push(domain);
       }
     });
     console.log('a: ' + a);
