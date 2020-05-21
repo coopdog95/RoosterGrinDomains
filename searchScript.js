@@ -34,23 +34,31 @@ function findMatches(wordToMatch, domains) {
 }
 function displayMatches() {
   if(this.value.length === 0) {
-    matchingDomains.classList.add("hidden");
     numberOfResults.classList.add("hidden");
+    matchingDomains.classList.add("hidden");
     originalDomains.classList.remove("hidden");
     return
   } else {
-    matchingDomains.classList.remove("hidden");
     numberOfResults.classList.remove("hidden");
+    matchingDomains.classList.remove("hidden");
     originalDomains.classList.add("hidden");
   }
+
+  const wordsArray = this.value.split(" ");
   const domainsArray = findMatches(this.value, domains);
   console.log(domainsArray);
+  var dd = '';
   const html = domainsArray.map(domain => {
-    const regex = new RegExp(this.value, 'gi');
-    const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
+    wordsArray.forEach((word, i) => {
+      const regex = new RegExp(word, 'gi');
+      const d = domain.replace(regex, `<span class="foundword">${word}</span>`);
+      dd.concat(d);
+    });
+    // const regex = new RegExp(this.value, 'gi');
+    // const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
     return `
       <div class="domain-container">
-        <h3>${d}</h3>
+        <h3>${dd}</h3>
       </div>
       <hr>
     `
