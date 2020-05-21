@@ -22,10 +22,10 @@ function findMatches(wordToMatch, domains) {
         retArray.push(domain);
       }
     });
-    console.log('a: ' + a);
-    console.log('retArray now: ' + retArray);
+    console.log('a'+a.length+': ' + a);
+    console.log('retArray now: '+retArray.length+': ' + retArray);
   });
-  console.log('final array: ' + retArray);
+  console.log('final array'+retArray.length+': ' + retArray);
   return retArray;
   // return domains.filter(domain => {
   //   const regex = new RegExp(wordToMatch, 'gi');
@@ -54,6 +54,7 @@ function displayMatches() {
       const d = domain.replace(regex, `<span class="foundword">${word}</span>`);
       dd.concat(d);
     });
+    console.log('dd: ' + dd);
     // const regex = new RegExp(this.value, 'gi');
     // const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
     return `
