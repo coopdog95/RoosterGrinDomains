@@ -17,8 +17,12 @@ function findMatches(wordToMatch, domains) {
       console.log("regex: " + regex);
       return domain.match(regex)
     });
+    a.forEach((domain, i) => {
+      if(!retArray.includes(domain)){
+        retArray.concat(domain);
+      }
+    });
     console.log('a: ' + a);
-    retArray.concat(...a);
     console.log('retArray now: ' + retArray);
   });
   console.log('final array: ' + retArray);
