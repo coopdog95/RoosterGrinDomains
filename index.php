@@ -40,14 +40,6 @@ $response = getDomains();
     <div class="search-container container">
       <!-- Search form -->
         <input class="search-bar" id="searchy" type="text" placeholder="Search..." aria-label="Search">
-        <style media="screen">
-        @media screen and (max-width:450px) {
-          #searchy {
-            height: 100px !important;
-            font-size: 40px !important;
-          }
-        }
-        </style>
     </div>
 
     <div class="domains-container container">
@@ -71,6 +63,13 @@ $response = getDomains();
       const response = <?php echo json_encode($response); ?>;
     </script>
     <script src="searchScript.js" type="text/javascript"></script>
-
+    <style media="screen">
+    @media screen and (max-width:450px) {
+      #searchy {
+        height: 100px !important;
+        font-size: 40px !important;
+      }
+    }
+    </style>
   </body>
 </html>
