@@ -53,7 +53,7 @@ function displayMatches() {
       const regex = new RegExp(word, 'gi');
       const d = domain.replace(regex, `<span class="foundword">${word}</span>`);
       console.log('d:' + d);
-      dd.concat(d);
+      dd += d;
     });
     console.log('dd: ' + dd);
     // const regex = new RegExp(this.value, 'gi');
