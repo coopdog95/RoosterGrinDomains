@@ -64,13 +64,5 @@ $response = getDomains();
       const response = <?php echo json_encode($response); ?>;
     </script>
     <script src="searchScript.js" type="text/javascript"></script>
-    <style media="screen">
-    @media screen and (max-width:450px) {
-      #searchy {
-        height: 100px !important;
-        font-size: 40px !important;
-      }
-    }
-    </style>
   </body>
 </html>
