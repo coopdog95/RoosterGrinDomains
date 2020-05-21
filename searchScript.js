@@ -10,16 +10,16 @@ for (var i = 0; i < response.length; i++) {
 function findMatches(wordToMatch, domains) {
   var wordsArray = wordToMatch.split(" ");
   wordsArray = wordsArray.filter(word => {
-    console.log('word ('+word.length+'): ' + word);
+    // console.log('word ('+word.length+'): ' + word);
     return word.length > 1;
   })
 
-  console.log('wordsArray('+wordsArray.length+'): ' + wordsArray);
+  // console.log('wordsArray('+wordsArray.length+'): ' + wordsArray);
   var retArray = [];
   wordsArray.forEach((word, i) => {
     var a = domains.filter(domain => {
       const regex = new RegExp(word, 'gi');
-      console.log("regex: " + regex);
+      // console.log("regex: " + regex);
       return domain.match(regex)
     });
     a.forEach((domain, i) => {
@@ -30,7 +30,7 @@ function findMatches(wordToMatch, domains) {
     // console.log('a'+a.length+': ' + a);
     // console.log('retArray now: '+retArray.length+': ' + retArray);
   });
-  console.log('final array'+retArray.length+': ' + retArray);
+  // console.log('final array'+retArray.length+': ' + retArray);
   return retArray;
   // return domains.filter(domain => {
   //   const regex = new RegExp(wordToMatch, 'gi');
