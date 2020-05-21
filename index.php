@@ -52,7 +52,7 @@ $response = getDomains();
             <?php foreach ($domains as $key => $domain) { ?>
               <div class="domain-container">
                 <h3><?php echo $domain; ?></h3>
-                <a href="#" class="contact-btn">Contact Us!</div>
+                <a href="#" class="contact-btn">Contact Us!</a>
               </div>
               <hr>
             <?php } ?>
