@@ -62,8 +62,8 @@ function displayMatches() {
     // console.log('dd: ' + dd);
     // const regex = new RegExp(this.value, 'gi');
     // const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
-    if (domain.length > 24) {
-      domain = `<span class="long-url">${domain}</span`;
+    if (domain.length >= 23) {
+      domain = `<span class="long-url">${domain}</span>`;
     }
     return `
       <div class="domain-container">
