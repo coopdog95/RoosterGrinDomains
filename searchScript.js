@@ -10,8 +10,8 @@ for (var i = 0; i < response.length; i++) {
 function findMatches(wordToMatch, domains) {
   var wordsArray = wordToMatch.split(" ");
   wordsArray.filter(word => {
-    console.log('word ()'+word.length+'): ' + word);
-    return word.length > 0;
+    console.log('word ('+word.length+'): ' + word);
+    return word.length > 1;
   })
 
   console.log('wordsArray('+wordsArray.length+'): ' + wordsArray);
