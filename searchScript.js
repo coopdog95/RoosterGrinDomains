@@ -18,7 +18,7 @@ function findMatches(wordToMatch, domains) {
       return domain.match(regex)
     });
     console.log('a: ' + a);
-    retArray.concat(...a).unique();
+    retArray.concat(...a);
     console.log('retArray now: ' + retArray);
   });
   console.log('final array: ' + retArray);
