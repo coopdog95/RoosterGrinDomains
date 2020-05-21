@@ -16,7 +16,8 @@ function findMatches(wordToMatch, domains) {
       const regex = new RegExp(word, 'gi');
       console.log("regex: " + regex);
       return domain.match(regex)
-    })
+    });
+    console.log('a: ' + a);
     retArray.concat(a);
     console.log('retArray now: ' + retArray);
   });
