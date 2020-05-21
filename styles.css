@@ -2,6 +2,13 @@ body {
   margin-top: 50px;
 }
 
+.main {
+  background-image: url('hero.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .domain-container {
   padding: 5px 10px;
 }

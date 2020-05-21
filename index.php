@@ -32,44 +32,47 @@ $response = getDomains();
 
   </head>
   <body>
-    <!-- <pre><?php //print_r($response); ?></pre> -->
-    <div class="heading container">
-      <div class="heading-logo"></div>
-      <h1>Rooster Grin Domains</h1>
-      <!-- <h3><?php //echo count($domains); ?> domains available!</h3> -->
-    </div>
-    <div class="search-container container">
-      <!-- Search form -->
-        <input class="search-bar" id="searchy" type="text" placeholder="Search..." aria-label="Search">
-    </div>
+    <div class="main">
+      <!-- <pre><?php //print_r($response);?></pre> -->
+      <div class="heading container">
+        <div class="heading-logo"></div>
+        <h1>Rooster Grin Domains</h1>
+        <!-- <h3><?php //echo count($domains);?> domains available!</h3> -->
+      </div>
+      <div class="search-container container">
+        <!-- Search form -->
+          <input class="search-bar" id="searchy" type="text" placeholder="Search..." aria-label="Search">
+      </div>
 
-    <div class="domains-container container">
-      <div class="row">
-        <div class="col-12">
-          <div class="numberOfResults"></div>
-          <div class="matchingDomains"></div>
-          <div class="originalDomains">
-            <?php foreach ($domains as $key => $domain) { ?>
-              <div class="domain-container">
-                <h3><?php
-                if(strlen($domain) >= 23 ){
-                   echo '<span class="long-url">' . $domain . '</span>';
-                }
-                else{
-                  echo $domain;
-                }
-                ?></h3>
-                <a href="#" class="contact-btn">Contact Us!</a>
-              </div>
-              <hr>
-            <?php } ?>
+      <div class="domains-container container">
+        <div class="row">
+          <div class="col-12">
+            <div class="numberOfResults"></div>
+            <div class="matchingDomains"></div>
+            <div class="originalDomains">
+              <?php foreach ($domains as $key => $domain) { ?>
+                <div class="domain-container">
+                  <h3><?php
+                  if (strlen($domain) >= 23) {
+                      echo '<span class="long-url">' . $domain . '</span>';
+                  } else {
+                      echo $domain;
+                  }
+                  ?></h3>
+                  <a href="#" class="contact-btn">Contact Us!</a>
+                </div>
+                <hr>
+              <?php } ?>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+
     <script type="text/javascript">
       const response = <?php echo json_encode($response); ?>;
     </script>
     <script src="searchScript.js" type="text/javascript"></script>
+    </div>
   </body>
 </html>
