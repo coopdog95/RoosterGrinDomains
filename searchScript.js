@@ -65,6 +65,7 @@ function displayMatches() {
     return `
       <div class="domain-contakiner">
         <h3>${domain}</h3>
+        <a href="#" class="contact-btn">Contact Us!</a>
       </div>
       <hr>
     `

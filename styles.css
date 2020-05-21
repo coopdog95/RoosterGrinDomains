@@ -58,7 +58,7 @@ body {
   padding-bottom: 18px;
 }
 
-.originalDomains .domain-container .contact-btn {
+.domain-container .contact-btn {
   width: 100px;
   padding: 10px;
   position: relative;
@@ -73,6 +73,7 @@ body {
 .originalDomains .domain-container .contact-btn:hover {
   background-color: #811b54;
   color: white;
+  text-decoration: none;
 }
 
 
