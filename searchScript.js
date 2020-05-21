@@ -52,6 +52,7 @@ function displayMatches() {
     wordsArray.forEach((word, i) => {
       const regex = new RegExp(word, 'gi');
       const d = domain.replace(regex, `<span class="foundword">${word}</span>`);
+      console.log('d:' + d);
       dd.concat(d);
     });
     console.log('dd: ' + dd);
