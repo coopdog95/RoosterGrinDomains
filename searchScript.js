@@ -9,11 +9,22 @@ for (var i = 0; i < response.length; i++) {
 
 function findMatches(wordToMatch, domains) {
   const wordsArray = wordToMatch.split(" ");
-  return domains.filter(domain => {
-    const regex = new RegExp(wordToMatch, 'gi');
-    console.log("regex: " + regex);
-    return domain.match(regex)
+  var retArray = [];
+  wordsArray.forEach((word, i) => {
+    var a = domains.filter(domain => {
+      const regex = new RegExp(word, 'gi');
+      console.log("regex: " + regex);
+      return domain.match(regex)
+    })
+    retArray.push(a);
+    console.log('retArray now: ' + retArray);
   });
+  console.log('final array: ' + retArray);
+  return retArray;
+  // return domains.filter(domain => {
+  //   const regex = new RegExp(wordToMatch, 'gi');
+  //   return domain.match(regex)
+  // });
 }
 function displayMatches() {
   if(this.value.length === 0) {
