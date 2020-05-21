@@ -8,8 +8,10 @@ for (var i = 0; i < response.length; i++) {
 }
 
 function findMatches(wordToMatch, domains) {
+  const wordsArray = wordsToMatch.split(" ");
   return domains.filter(domain => {
     const regex = new RegExp(wordToMatch, 'gi');
+    console.log("regex: " + regex);
     return domain.match(regex)
   });
 }
@@ -24,7 +26,6 @@ function displayMatches() {
     numberOfResults.classList.remove("hidden");
     originalDomains.classList.add("hidden");
   }
-  const wordsArray = this.value.split(" ");
   const domainsArray = findMatches(this.value, domains);
   console.log(domainsArray);
   const html = domainsArray.map(domain => {
