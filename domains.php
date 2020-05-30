@@ -22,8 +22,9 @@ function main() {
 function getDomains() {
   $status = "ACTIVE";
   $limit = '1000';
+  $marker = 'orthodonticsdearborn.com';
 
-  $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit";
+  $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit&marker=$marker";
 
   $header = array(
       'Authorization: sso-key e4MzyMPn8fAg_FzDC2wsTtydo2FscwYDXBX:LLsJGWYhAfcVRBqMGvQPbX'
