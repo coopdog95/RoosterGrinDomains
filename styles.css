@@ -111,6 +111,7 @@ body {
   }
   .domain-container .contact-btn {
     bottom: 42px;
+    right: 0px;
   }
   .numberOfResults h4 {
     font-size: 30px;

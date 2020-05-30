@@ -1,16 +1,5 @@
 
 
-// var domains = [];
-// for (var i = 0; i < response1.length; i++) {
-//   let domain = response1[i]["domain"]
-//   domains.push(domain)
-//   // console.log(domain)
-// }
-// for (var i = 0; i < response2.length; i++) {
-//   let domain = response2[i]["domain"]
-//   domains.push(domain)
-//   // console.log(domain)
-// }
 
 function findMatches(wordToMatch, domains) {
   var wordsArray = wordToMatch.split(" ");
@@ -73,7 +62,7 @@ function displayMatches() {
     return `
       <div class="domain-container">
         <h3>${domain}</h3>
-        <a href="#" class="contact-btn">Contact Us!</a>
+        <a href="mailto:alex.bagden@roostergrin.com?subject=DOMAIN INQUIRY - ${domain}" class="contact-btn">Contact Us!</a>
       </div>
       <hr>
     `

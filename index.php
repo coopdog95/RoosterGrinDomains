@@ -26,9 +26,12 @@ $fetchedDomains = main();
     <div class="main">
       <!-- <pre><?php //print_r($response1);?></pre> -->
       <div class="heading container">
-        <div class="heading-logo"></div>
+        <a href="https://roostergrin.com">
+          <div class="heading-logo"></div>
+        </a>
         <h1>Rooster Grin Domains</h1>
         <h3><?php echo count($fetchedDomains);?> domains available!</h3>
+        <a href="https://www.roostergrin.com/domain-inquiry/"><h4>Contact Us</h4></a>
       </div>
       <div class="search-container container">
         <!-- Search form -->
@@ -50,7 +53,7 @@ $fetchedDomains = main();
                       echo $domain;
                   }
                   ?></h3>
-                  <a href="#" class="contact-btn">Contact Us!</a>
+                  <a href="mailto:alex.bagden@roostergrin.com?subject=DOMAIN INQUIRY - <?php echo $domain; ?>" class="contact-btn">Contact Us!</a>
                 </div>
                 <hr>
               <?php } ?>
