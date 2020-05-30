@@ -3,7 +3,8 @@
 include_once('domains.php');
 
 $domains = main();
-$response = getDomains();
+$response1 = getDomains1();
+$response2 = getDomains2();
 
 ?>
 
@@ -70,7 +71,8 @@ $response = getDomains();
 
 
     <script type="text/javascript">
-      const response = <?php echo json_encode($response); ?>;
+      const response1 = <?php echo json_encode($response1); ?>;
+      const response2 = <?php echo json_encode($response2); ?>;
     </script>
     <script src="searchScript.js" type="text/javascript"></script>
     </div>

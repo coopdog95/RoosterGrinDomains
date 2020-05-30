@@ -1,8 +1,13 @@
 
 
 var domains = [];
-for (var i = 0; i < response.length; i++) {
-  let domain = response[i]["domain"]
+for (var i = 0; i < response1.length; i++) {
+  let domain = response1[i]["domain"]
+  domains.push(domain)
+  // console.log(domain)
+}
+for (var i = 0; i < response2.length; i++) {
+  let domain = response2[i]["domain"]
   domains.push(domain)
   // console.log(domain)
 }
