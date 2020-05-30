@@ -24,7 +24,7 @@ $response2 = getDomains2($lastDomain);
   </head>
   <body>
     <div class="main">
-      <!-- <pre><?php //print_r($response);?></pre> -->
+      <pre><?php print_r($response1);?></pre>
       <div class="heading container">
         <div class="heading-logo"></div>
         <h1>Rooster Grin Domains</h1>
