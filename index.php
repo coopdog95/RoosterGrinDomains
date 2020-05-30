@@ -66,7 +66,7 @@ $response2 = getDomains2($lastDomain);
     </script>
     <script type="text/javascript">
 
-      const lastDomain = <?php echo $lastDomain; ?>;
+      const lastDomain = '<?php echo $lastDomain; ?>';
       console.log('Last domain: ' + lastDomain);
 
     </script>
