@@ -2,10 +2,10 @@
 
 include_once('domains.php');
 
-$domains = main();
-$lastDomain = $domains[999];
-$response1 = getDomains1();
-$response2 = getDomains2($lastDomain);
+$fetchedDomains = main();
+// $lastDomain = $fetchedDomains[999];
+// $response1 = getDomains1();
+// $response2 = getDomains2($lastDomain);
 
 ?>
 
@@ -24,11 +24,11 @@ $response2 = getDomains2($lastDomain);
   </head>
   <body>
     <div class="main">
-      <pre><?php print_r($response1);?></pre>
+      <!-- <pre><?php //print_r($response1);?></pre> -->
       <div class="heading container">
         <div class="heading-logo"></div>
         <h1>Rooster Grin Domains</h1>
-        <h3><?php echo count($domains);?> domains available!</h3>
+        <h3><?php echo count($fetchedDomains);?> domains available!</h3>
       </div>
       <div class="search-container container">
         <!-- Search form -->
@@ -41,7 +41,7 @@ $response2 = getDomains2($lastDomain);
             <div class="numberOfResults"></div>
             <div class="matchingDomains"></div>
             <div class="originalDomains">
-              <?php foreach ($domains as $key => $domain) { ?>
+              <?php foreach ($fetchedDomains as $key => $domain) { ?>
                 <div class="domain-container">
                   <h3><?php
                   if (strlen($domain) >= 23) {
@@ -61,14 +61,9 @@ $response2 = getDomains2($lastDomain);
 
 
     <script type="text/javascript">
-      const response1 = <?php echo json_encode($response1); ?>;
-      const response2 = <?php echo json_encode($response2); ?>;
-    </script>
-    <script type="text/javascript">
-
-      const lastDomain = '<?php echo $lastDomain; ?>';
-      console.log('Last domain: ' + lastDomain);
-
+      // const response1 = <?php echo json_encode($response1); ?>;
+      // const response2 = <?php echo json_encode($response2); ?>;
+      const domains = <?php echo json_encode($domains); ?>;
     </script>
     <script src="searchScript.js" type="text/javascript"></script>
     </div>

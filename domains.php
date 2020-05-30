@@ -3,25 +3,41 @@
 
 function main() {
 
-  $response1 = getDomains1();
-
+  $response = getDomains(NULL);
+  $numberOfAPICalls = 1;
   $domains = Array();
 
-  for($i = 0; $i<count($response1); $i++) {
-    $currentDomain = $response1[$i]["domain"];
+  for($i = 0; $i<count($response); $i++) {
+    $currentDomain = $response[$i]["domain"];
     $domains[] = $currentDomain;
   }
 
-  $marker = $domains[count($domains)-1];
-  $response2 = getDomains2($marker);
+  while(count($domains) == ($numberOfAPICalls*1000)) {
+    $index = (($numberOfAPICalls*1000)-1);
+    $marker = $domains[$index];
+    $res = getDomains($marker);
+    $numberOfAPICalls++;
 
-
-  for($j = 0; $j<count($response2); $j++) {
-    $currentDomain = $response2[$j]["domain"];
-    $domains[] = $currentDomain;
+    for($j = 0; $j<count($res); $j++) {
+      $currentDomain = $res[$j]["domain"];
+      $domains[] = $currentDomain;
+    }
   }
+
+  // $marker = $domains[count($domains)-1];
+  // $response2 = getDomains2($marker);
+  //
+  //
+  // for($j = 0; $j<count($response2); $j++) {
+  //   $currentDomain = $response2[$j]["domain"];
+  //   $domains[] = $currentDomain;
+  // }
 
   return $domains;
+
+  //
+
+
 
 }
 
@@ -68,7 +84,14 @@ function getDomains2($marker) {
   $status = "ACTIVE";
   $limit = '1000';
 
-  $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit&marker=$marker";
+  $url = "";
+
+  if(isset($marker)) {
+    $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit&marker=$marker";
+  } else {
+    $url = "https://api.godaddy.com/v1/domains?statuses=$status&limit=$limit";
+  }
+
 
   $header = array(
       'Authorization: sso-key e4MzyMPn8fAg_FzDC2wsTtydo2FscwYDXBX:LLsJGWYhAfcVRBqMGvQPbX'
