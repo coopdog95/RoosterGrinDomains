@@ -80,7 +80,7 @@ function getDomains1() {
 
 }
 
-function getDomains2($marker) {
+function getDomains($marker) {
   $status = "ACTIVE";
   $limit = '1000';
 
