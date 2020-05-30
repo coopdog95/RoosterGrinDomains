@@ -63,7 +63,12 @@ $response2 = getDomains2($lastDomain);
       const response1 = <?php echo json_encode($response1); ?>;
       const response2 = <?php echo json_encode($response2); ?>;
     </script>
-    <script>console.log('Last domain: <?php echo $lastDomain; ?>')</script>
+    <script type="text/javascript">
+
+    const lastDomain = <?php echo $lastDomain; ?>;
+    console.log('Last domain: ' + lastDomain);
+
+    </script>
     <script src="searchScript.js" type="text/javascript"></script>
     </div>
   </body>
