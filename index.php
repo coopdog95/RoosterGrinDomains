@@ -3,7 +3,7 @@
 include_once('domains.php');
 
 $domains = main();
-$lastDomain[999];
+$lastDomain = $domains[999];
 $response1 = getDomains1();
 $response2 = getDomains2($lastDomain);
 
