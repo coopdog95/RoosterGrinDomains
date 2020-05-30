@@ -1,6 +1,5 @@
 <?php
 
-$lastDomain = "";
 
 function main() {
 
@@ -14,7 +13,6 @@ function main() {
   }
 
   $marker = $domains[count($domains)-1];
-  $lastDomain = $marker;
   $response2 = getDomains2($marker);
 
 
@@ -102,6 +100,10 @@ function getDomains2($marker) {
 
   return $dn;
 
+}
+
+function getMarker($domains) {
+  return $domains[count($domains)-1];
 }
 
 

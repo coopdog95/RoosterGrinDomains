@@ -3,6 +3,7 @@
 include_once('domains.php');
 
 $domains = main();
+$lastDomain[999];
 $response1 = getDomains1();
 $response2 = getDomains2($lastDomain);
 
@@ -65,8 +66,8 @@ $response2 = getDomains2($lastDomain);
     </script>
     <script type="text/javascript">
 
-    const lastDomain = <?php echo $lastDomain; ?>;
-    console.log('Last domain: ' + lastDomain);
+      const lastDomain = <?php echo $lastDomain; ?>;
+      console.log('Last domain: ' + lastDomain);
 
     </script>
     <script src="searchScript.js" type="text/javascript"></script>
