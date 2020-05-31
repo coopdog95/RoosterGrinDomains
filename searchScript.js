@@ -56,13 +56,14 @@ function displayMatches() {
     // console.log('dd: ' + dd);
     // const regex = new RegExp(this.value, 'gi');
     // const d = domain.replace(regex, `<span class="foundword">${this.value}</span>`);
+    let originalDomain = domain;
     if (domain.length >= 23) {
       domain = `<span class="long-url">${domain}</span>`;
     }
     return `
       <div class="domain-container">
         <h3>${domain}</h3>
-        <a href="mailto:alex.bagden@roostergrin.com?subject=DOMAIN INQUIRY - ${domain}" class="contact-btn">Contact Us!</a>
+        <a href="mailto:alex.bagden@roostergrin.com?subject=DOMAIN INQUIRY - ${originalDomain}" class="contact-btn">Contact Us!</a>
       </div>
       <hr>
     `

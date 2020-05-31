@@ -27,6 +27,8 @@ body {
   margin: 0 auto;
 }
 
+
+
 .domains-container, .search-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -64,6 +66,10 @@ body {
   height: 100px;
   width: auto;
   margin: 0 auto;
+}
+
+.heading a h4 {
+  color: #811b54;
 }
 
 .numberOfResults {
