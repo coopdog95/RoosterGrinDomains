@@ -78,21 +78,23 @@ body {
   padding-bottom: 18px;
 }
 
-.domain-container .contact-btn {
+.contact-btn {
   width: 100px;
   padding: 10px;
   position: relative;
-  right: 30px;
-  float: right;
-  bottom: 30px;
   background-color: white;
   border: #811b54 1px solid;
   color: #811b54;
   border-radius: 10px;
   text-decoration: none;
 }
+.domain-container .contact-btn {
+  right: 30px;
+  float: right;
+  bottom: 30px;
+}
 
-.domain-container .contact-btn:hover {
+.contact-btn:hover {
   background-color: #811b54;
   color: white;
   text-decoration: none;

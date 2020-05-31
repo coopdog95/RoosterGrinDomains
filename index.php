@@ -31,7 +31,7 @@ $fetchedDomains = main();
         </a>
         <h1>Rooster Grin Domains</h1>
         <h3><?php echo count($fetchedDomains);?> domains available!</h3>
-        <a href="https://www.roostergrin.com/domain-inquiry/"><h4>Contact Us</h4></a>
+        <a class="contact-btn" href="https://www.roostergrin.com/domain-inquiry/">Contact Us!</a>
       </div>
       <div class="search-container container">
         <!-- Search form -->
