@@ -27,6 +27,10 @@ body {
   margin: 0 auto;
 }
 
+.matchingDomains {
+  width: 100% !important;
+}
+
 
 
 .domains-container, .search-container {
