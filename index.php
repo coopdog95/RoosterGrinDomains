@@ -12,7 +12,7 @@ $fetchedDomains = main();
 <html lang="en" dir="ltr">
   <head>
     <title>Domains | Rooster Grin</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
     <style><?php include 'styles.css'; ?></style>
     <!-- <link rel="stylesheet" href="./styles.css"> -->
@@ -64,8 +64,11 @@ $fetchedDomains = main();
 
 
     <script type="text/javascript">
-      // const response1 = <?php echo json_encode($response1); ?>;
-      // const response2 = <?php echo json_encode($response2); ?>;
+      $(function() {
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        $("html, body").css({"width":w,"height":h});
+      });
       const domains = <?php echo json_encode($fetchedDomains); ?>;
     </script>
     <script src="searchScript.js" type="text/javascript"></script>
