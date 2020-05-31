@@ -115,9 +115,9 @@ body {
   html {
     width: 175%;
   }
-  .main {
+  /* .main {
     width: 95%;
-  }
+  } */
   .domains-container {
     width: 98% !important;
   }
