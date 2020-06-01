@@ -53,7 +53,7 @@ $fetchedDomains = main();
                       echo $domain;
                   }
                   ?></h3>
-                  <a href="mailto:alex.bagden@roostergrin.com?subject=DOMAIN INQUIRY - <?php echo $domain; ?>" class="contact-btn">Contact Us!</a>
+                  <a href="mailto:info@roostergrin.com?subject=DOMAIN INQUIRY - <?php echo $domain; ?>" class="contact-btn">Contact Us!</a>
                 </div>
                 <hr>
               <?php } ?>
@@ -64,7 +64,7 @@ $fetchedDomains = main();
 
 
     <script type="text/javascript">
-      
+
       const domains = <?php echo json_encode($fetchedDomains); ?>;
     </script>
     <script src="searchScript.js" type="text/javascript"></script>

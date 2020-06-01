@@ -63,7 +63,7 @@ function displayMatches() {
     return `
       <div class="domain-container">
         <h3>${domain}</h3>
-        <a href="mailto:alex.bagden@roostergrin.com?subject=DOMAIN INQUIRY - ${originalDomain}" class="contact-btn">Contact Us!</a>
+        <a href="mailto:info@roostergrin.com?subject=DOMAIN INQUIRY - ${originalDomain}" class="contact-btn">Contact Us!</a>
       </div>
       <hr>
     `
